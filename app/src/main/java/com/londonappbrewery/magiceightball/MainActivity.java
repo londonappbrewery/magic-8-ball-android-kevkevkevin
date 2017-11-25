@@ -34,12 +34,9 @@ public class MainActivity extends AppCompatActivity {
         askButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Random randomNumberGenerator = new Random();
-
                 int number = randomNumberGenerator.nextInt(5);
-
-            mainBall.setImageResource(ballArray[number]);
+                mainBall.setImageResource(ballArray[number]);
             }
         });
     }
